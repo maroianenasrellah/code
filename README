@@ -1,0 +1,8 @@
+INFO: Loading early plugins from ['/usr/bin', '/usr/lib/python35.zip', '/usr/lib/python3.5', '/usr/lib/python3.5/plat-arm-linux-gnueabihf', '/usr/lib/python3.5/lib-dynload', '/usr/local/lib/python3.5/dist-packages', '/usr/lib/python3/dist-packages', '/root/.thonny/plugins/lib/python3.5/site-packages']
+ERROR: Failed loading plugin 'thonny.plugins.pi_theme'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/thonny/workbench.py", line 251, in _load_plugins_from_path
+    getattr(m, load_function_name)()
+  File "/usr/lib/python3/dist-packages/thonny/plugins/pi_theme/__init__.py", line 59, in load_early_plugin
+    for line in open (os.path.join (os.path.expanduser ("~"), ".config/lxsession/LXDE-pi/desktop.conf"), "r"):
+FileNotFoundError: [Errno 2] No such file or directory: '/root/.config/lxsession/LXDE-pi/desktop.conf'
